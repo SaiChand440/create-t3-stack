@@ -57,7 +57,7 @@ const merged = server.merge(client);
 /** @typedef {z.SafeParseReturnType<MergedInput, MergedOutput>} MergedSafeParseReturn */
 
 let env = /** @type {MergedOutput} */ (process.env);
-
+console.log("env list",env);
 if (!!process.env.SKIP_ENV_VALIDATION == false) {
   const isServer = typeof window === "undefined";
 
